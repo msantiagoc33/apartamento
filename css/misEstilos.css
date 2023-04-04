@@ -31,5 +31,9 @@
         .borrar, .ver{
             text-align: center;
         }
+        
+        .formLogin #nombre, .formLogin #password{
+            width: 90%;
+        }
 
     }
