@@ -19,7 +19,7 @@ class Conexion {
         }
     }
 //    
-//    ********************** CONEXION LOCAL *************************************
+//    ********************** CONEXION LOCAL PARA PRUEBAS *************************************
 //        public static function conectar() {
 //        try {
 //            $conexion = new PDO("mysql:host=localhost; dbname=apartamento; charset=utf8", "cabeza", "mazemane");
