@@ -2,43 +2,71 @@
     Created on : Apr 4, 2023, 12:23:08 PM
     Author     : cabeza
 */
+#navPrincipal{
+    margin: 0 auto;
+    text-decoration: none;
+    list-style: none;
+    display: grid;
+    grid-template-columns:  repeat(6, 1fr);
+    gap: 5px;
+    align-content: space-around ;
+    justify-items: center;
+}
+#navPrincipal li{
+    background-color: #00cccc;
+    border-radius: 5px;
+    color: magenta;
+}
+.navPrincipal{
+    margin: 0 auto;
+}
+@media(max-width: 768px){
+    .container{
+        min-width: 250px;
+        background-color: whitesmoke;
+    }
+    .ocultar{
+        display: none;
+    }
 
- @media(max-width: 768px){
-        .container{
-            min-width: 250px;
-            background-color: whitesmoke;
-        }
-        .ocultar{
-            display: none;
-        }
-
-        #entrada,#salida,#noches,#huespedes,#importe{
-            font-size: .8em;
-
-        }
-        .table th{
-            font-size: .8em;
-            width: 80px;
-            background-color: cyan;
-            border: 1px solid black;
-        }
-        .table tr td{
-            font-size: .8em;
-            width: 80px;
-            background-color: mediumaquamarine;
-            border: 1px solid black;
-        }
-        .borrar, .ver{
-            text-align: center;
-            font-size: .6em;
-            font-weight: bold;
-        }
-        .col-4,.col-8{
-            font-size: .8em;
-            font-weight:bold; 
-            color:blue;
-        }
-
-        
+    #entrada,#salida,#noches,#huespedes,#importe{
+        font-size: .8em;
 
     }
+    .table th{
+        font-size: .8em;
+        width: 80px;
+        background-color: cyan;
+        border: 1px solid black;
+    }
+    .table tr td{
+        font-size: .8em;
+        width: 80px;
+        background-color: mediumaquamarine;
+        border: 1px solid black;
+    }
+    .borrar, .ver{
+        text-align: center;
+        font-size: .6em;
+        font-weight: bold;
+    }
+    .col-4,.col-8{
+        font-size: .8em;
+        font-weight:bold;
+        color:blue;
+    }
+    #navPrincipal{
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-content: space-around ;
+        justify-items: center;
+        border: 3px solid black;
+    }
+ 
+
+
+
+}
