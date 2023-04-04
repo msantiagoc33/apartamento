@@ -6,11 +6,8 @@
             <file>file:/var/www/html/apartamento/Controlador/Controlador_apartamento.php</file>
             <file>file:/var/www/html/apartamento/Vista/cabecera.html</file>
             <file>file:/var/www/html/apartamento/Vista/menuPrincipal.php</file>
-            <file>file:/var/www/html/apartamento/Conexion/ConexionPDO.php</file>
-            <file>file:/var/www/html/apartamento/Vista/ListadoIngresos.php</file>
-            <file>file:/var/www/html/apartamento/js/Ingresos.js</file>
+            <file>file:/var/www/html/apartamento/.gitignore</file>
             <file>file:/var/www/html/apartamento/index.php</file>
-            <file>file:/var/www/html/apartamento/Vista/NuevoIngreso.php</file>
             <file>file:/var/www/html/apartamento/css/misEstilos.css</file>
         </group>
     </open-files>
