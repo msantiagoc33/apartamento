@@ -29,10 +29,10 @@ $total = 0;
                     <tr>
                         <th class="text-center" id="entrada">ENTRADA</th>
                         <th class="text-center" id="salida">SALIDA</th>
-                        <th class="text-center" id="noches">NOCHES</th>
+                        <th class="text-center" id="noches"><i class="fa-solid fa-house"></i></th>
                         <th class="text-center ocultar">PLATAFORMA</th>
-                        <th class="text-center" id="huespedes">HUESPEDES</th>
-                        <th class="text-center" id="importe">IMPORTE</th>
+                        <th class="text-center" id="huespedes"><i class="fa-solid fa-person"></i></th>
+                        <th class="text-center" id="importe"><i class="fa-solid fa-money-bill-1-wave"></i></th>
                         <th class="text-center ocultar">CLIENTE</th>
                         <th class="text-center ocultar">PAIS</th>
                     </tr>
@@ -96,10 +96,10 @@ $total = 0;
                     <input type='hidden' name='id_Ingreso' value='<?php echo $row->id_ingreso; ?>'/>
 
                     <td class="borrar">
-                        <a href="#&idIngreso=<?php echo $row->id_ingreso; ?>&borrar='borrar' &rc='rc' " class="btn btn-danger">Borrar</a>
+                        <a href="#&idIngreso=<?php echo $row->id_ingreso; ?>&borrar='borrar' &rc='rc' " class="btn btn-danger borrar">Borrar</a>
                     </td>
                     <td class="ver">
-                        <a href="#&idIngreso=<?php echo $row->id_ingreso; ?>&ver='ver'" class="btn btn-primary" name='ver'>Ver</a>
+                        <a href="#&idIngreso=<?php echo $row->id_ingreso; ?>&ver='ver'" class="btn btn-primary ver" name='ver'>Ver</a>
                     </td>
 
                     </tr>

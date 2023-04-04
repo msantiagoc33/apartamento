@@ -24,14 +24,14 @@ $total = 0;
             <table class="table" id="tablaIngresos">
                 <thead>
                     <tr>
-                         <th class="text-center" id="entrada">ENTRADA</th>
-                        <th class="text-center" id="salida">SALIDA</th>
-                        <th class="text-center" id="noches"><i class="fa-solid fa-house"></i></th>
-                        <th class="text-center ocultar">PLATAFORMA</th>
-                        <th class="text-center" id="huespedes"><i class="fa-solid fa-person"></i></th>
-                        <th class="text-center" id="importe"><i class="fa-solid fa-money-bill-1-wave"></i></th>
-                        <th class="text-center ocultar">CLIENTE</th>
-                        <th class="text-center ocultar">PAIS</th>
+                        <th class="text-center">ENTRADA</th>
+                        <th class="text-center">SALIDA</th>
+                        <th class="text-center">NOCHES</th>
+                        <th class="text-center">PLATAFORMA</th>
+                        <th class="text-center">HUESPEDES</th>
+                        <th class="text-center">IMPORTE</th>
+                        <th class="text-center">CLIENTE</th>
+                        <th class="text-center">PAIS</th>
                     </tr>
                 </thead>
                 <?php
@@ -67,15 +67,15 @@ $total = 0;
                             ?>
                         </td>
 
-                        <td class="text-center ocultar"><?php echo $row->plataforma; ?></td>
+                        <td class="text-center"><?php echo $row->plataforma; ?></td>
                         <td class="text-center"><?php echo $row->huespedes; ?></td>
                         <td style='width: 70px; text-align:right; color:blue;'><?php echo number_format($row->importe, $decimals = 2, $dec_point = ',', $thousands_sep = "."); ?></td>
 
                         <?php
                         ?>
 
-                        <td class="ocultar"><?php echo $row->cliente; ?></td>
-                        <td class="ocultar"><?php echo $row->pais; ?></td>
+                        <td><?php echo $row->cliente; ?></td>
+                        <td><?php echo $row->pais; ?></td>
 
 
                         <?php
@@ -84,9 +84,9 @@ $total = 0;
                     ?>
             </table>
             <div class="row">
-                <div class="col-8">
+                <div class="col-4">
                     <?php if ($_SESSION['historicoApartamento'] > 0) { ?>
-                        <p>Total del HISTORICO: <?php echo number_format($_SESSION['historicoApartamento'], $decimals = 2, $dec_point = ',', $thousands_sep = "."); ?></p>
+                        <p style='font-weight:bold; color:blue;'>Total del HISTORICO: <?php echo number_format($_SESSION['historicoApartamento'], $decimals = 2, $dec_point = ',', $thousands_sep = "."); ?></p>
                     <?php } ?>
                 </div>
             </div>

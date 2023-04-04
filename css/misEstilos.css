@@ -13,25 +13,32 @@
         }
 
         #entrada,#salida,#noches,#huespedes,#importe{
-            font-size: 1em;
+            font-size: .8em;
 
         }
         .table th{
-            font-size: 1em;
-            width: 110px;
+            font-size: .8em;
+            width: 80px;
             background-color: cyan;
             border: 1px solid black;
         }
         .table tr td{
-            font-size: 1em;
-            width: 110px;
+            font-size: .8em;
+            width: 80px;
             background-color: mediumaquamarine;
             border: 1px solid black;
         }
         .borrar, .ver{
             text-align: center;
+            font-size: .6em;
+            font-weight: bold;
         }
-        
+        .col-4,.col-8{
+            font-size: .8em;
+            font-weight:bold; 
+            color:blue;
+        }
+
         
 
     }
