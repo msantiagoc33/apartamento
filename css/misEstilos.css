@@ -1,0 +1,35 @@
+/* 
+    Created on : Apr 4, 2023, 12:23:08 PM
+    Author     : cabeza
+*/
+
+ @media(max-width: 768px){
+        .container{
+            min-width: 250px;
+            background-color: whitesmoke;
+        }
+        .ocultar{
+            display: none;
+        }
+
+        #entrada,#salida,#noches,#huespedes,#importe{
+            font-size: 1em;
+
+        }
+        .table th{
+            font-size: 1em;
+            width: 110px;
+            background-color: cyan;
+            border: 1px solid black;
+        }
+        .table tr td{
+            font-size: 1em;
+            width: 110px;
+            background-color: mediumaquamarine;
+            border: 1px solid black;
+        }
+        .borrar, .ver{
+            text-align: center;
+        }
+
+    }

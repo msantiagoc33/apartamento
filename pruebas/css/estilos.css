@@ -1,0 +1,47 @@
+#cabecera {
+    margin-top: 10px;
+}
+
+#sangut {
+    font-size: 1.5em;
+    color: #4ae40d;
+    font-weight: bold;
+    letter-spacing: 3px;
+    font-family: "Lucida Console", "Courier New", monospace;
+}
+
+.nav-item {
+    color: #577399;
+    font-size: 1.3em;
+}
+
+#cerrarSesion {
+    color: #dd0000;
+}
+.containerMedia{
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+    .container {
+        display: none;
+    }
+
+    .containerMedia {       
+        display: block;
+        width: 80%, auto;
+        margin: 0 40px;
+    }
+    nav{
+        display: flex;
+        flex-direction: row;
+        align-items:center;
+        justify-content: space-around;
+    }
+    ul li a{
+        font-size: 2rem;
+    }
+    .containerMedia h3 {
+        font-size: 3rem;
+    }
+}

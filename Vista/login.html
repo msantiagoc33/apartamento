@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>SANGUT</title>
+        <style>
+            .container{
+                margin-top: 10%;
+                height: 100vw;
+                display: flex;
+                align-items: center;
+                
+            }
+            .card{
+                width: 800px;
+            }
+            .cabecera{
+                text-align: center;
+                color: #007fff;
+            }
+            .input-group{
+                width: 500px;
+            }
+            .miboton{
+                margin-bottom: 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card mx-auto">
+                <form class="" action="?c=login" method="post">                  
+                    <div class="cabecera">
+                        <h3>Apartamento <span class="fst-italic text-warning">Apartamento SANGUT (Hacienda Beach)</span></h3>
+                        <h4>Identifícate</h4>
+                    </div>
+                   
+                    <div class="">
+                        <div class="input-group mb-3 mx-auto">  
+                            <span class="input-group-text" id="basic-addon1">Nombre de usuario</span>
+                            <input type="text" id="nombre" name="nombre" class="form-control" placeholder="Nombre" aria-label="Nombre" aria-describedby="basic-addon1">                     
+                        </div>
+                        <div class="input-group mb-3 mx-auto">  
+                            <span class="input-group-text" id="basic-addon1">Su contraseña</span>
+                            <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="password" aria-describedby="basic-addon1">                                                 
+                        </div>
+
+                    </div>
+                    <div class="miboton mx-auto d-grid gap-2 col-6">
+                        <input type="submit" name="enviar" value="Enviar" class="btn btn-primary">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
