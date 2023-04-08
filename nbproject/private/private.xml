@@ -3,12 +3,10 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
+            <file>file:/var/www/html/apartamento/Vista/ListadoIngresos.php</file>
             <file>file:/var/www/html/apartamento/Controlador/Controlador_apartamento.php</file>
-            <file>file:/var/www/html/apartamento/Vista/cabecera.html</file>
-            <file>file:/var/www/html/apartamento/Vista/menuPrincipal.php</file>
-            <file>file:/var/www/html/apartamento/.gitignore</file>
+            <file>file:/var/www/html/apartamento/Vista/login.html</file>
             <file>file:/var/www/html/apartamento/index.php</file>
-            <file>file:/var/www/html/apartamento/css/misEstilos.css</file>
         </group>
     </open-files>
 </project-private>

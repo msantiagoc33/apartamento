@@ -211,22 +211,12 @@ WHERE
 
     public function ingresoToHistorico() 
     {
-        // Esta funcion borra de la tabla ingresos y un trigger en la bbdd los inserta en la tabla historico
-        // $fecha_actual = new DateTime();
-        // $hoy = $fecha_actual->format("y/m/d");
-        // try {
-        //     $sqlBorrarIngreso = "DELETE FROM ingresos WHERE fechaSalida < ?";
-        //     $resultado = $this->conexion->prepare($sqlBorrarIngreso);
-        //     $resultado->execute(array($hoy));
-        // } catch (Exception $e) {
-        //     die("Error: ") . $e->getMessage();
-        // }
         $fecha_actual = new DateTime();
         $hoy = $fecha_actual->format("y/m/d");
         try {
             $this->conexion->beginTransaction();
-                $sqlInsertHistorico = "INSERT INTO historico SELECT * FROM ingresos where fechaEntrada < ?;";
-                $sqlBorrarIngreso =   "DELETE FROM ingresos WHERE fechaEntrada < ?";
+                $sqlInsertHistorico = "INSERT INTO historico SELECT * FROM ingresos where fechaSalida < ?;";
+                $sqlBorrarIngreso =   "DELETE FROM ingresos WHERE fechaSalida < ?";
                 $resultado1 = $this->conexion->prepare($sqlInsertHistorico);
                 $resultado2 = $this->conexion->prepare($sqlBorrarIngreso);
                 $resultado1->execute(array($hoy));

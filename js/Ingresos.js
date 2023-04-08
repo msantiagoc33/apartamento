@@ -149,21 +149,24 @@ $(document).ready(function () {
 
     var fecha = new Date();
     var hoy = fecha.getFullYear() + "/" + (fecha.getMonth() + 1) + "/" + fecha.getDate();
-    hoy = Date.parse(hoy);
+    hoy = Date.parse(hoy); // la convertimos en un numero
     pintarRows(hoy);
 
     function pintarRows() {
         $("#tablaIngresos tr .entrada").each(function () {
 
-            var entrada;
-            entrada = $(this).text();
-            entrada = new Date(entrada);
-            entrada = entrada.getFullYear() + "/" + (entrada.getMonth() + 1) + "/" + entrada.getDate();
-            entrada = Date.parse(entrada);
-            if (entrada > hoy) {
+
+            var entrada = $(this).text();   // capturamos el contenido del capo entrada
+            entrada = entrada.trim();       // le quitamos los espacios en blanco
+            entrada = new Date(entrada);    // lo convertimos a fecha
+            var formatoEntrada = entrada.getFullYear() + "/" + (entrada.getMonth() + 1) + "/" + entrada.getDate();  // le datos este formato
+
+            var entradaParseada = Date.parse(formatoEntrada);   // lo convertimos en un numero
+
+            if (entradaParseada <= hoy) {    // comparamos los numeros de ambas fechas   
+                $(this).css({'background-color': '#00ff00', 'color': 'black'});
+            } else if (entradaParseada > hoy) {
                 $(this).css({'background-color': '#ff0000', 'color': 'white'});
-            } else {
-                $(this).css({'background-color': '#0000ff', 'color': 'white'});
             }
         });
 

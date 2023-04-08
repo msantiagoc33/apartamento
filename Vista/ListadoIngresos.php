@@ -33,7 +33,7 @@ $total = 0;
                         <th class="text-center ocultar">PLATAFORMA</th>
                         <th class="text-center" id="huespedes"><i class="fa-solid fa-person"></i></th>
                         <th class="text-center" id="importe"><i class="fa-solid fa-money-bill-1-wave"></i></th>
-                        <th class="text-center ocultar">CLIENTE</th>
+                        <th class="text-center">HUESPED</th>
                         <th class="text-center ocultar">PAIS</th>
                     </tr>
                 </thead>
@@ -66,7 +66,7 @@ $total = 0;
                             ?>
                         </td>
 
-                        <td class="text-center">
+                        <td class="salida text-center">
                             <?php
                             echo $row->salida;
                             ?>
@@ -90,7 +90,7 @@ $total = 0;
                         <?php
                         ?>
 
-                        <td class="ocultar"><?php echo $row->cliente; ?></td>
+                        <td><?php echo $row->cliente; ?></td>
                         <td class="ocultar"><?php echo $row->pais; ?></td>
 
                     <input type='hidden' name='id_Ingreso' value='<?php echo $row->id_ingreso; ?>'/>
